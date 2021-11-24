@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="style.css">
+    	<title>Депозитный калькулятор</title>
+    </head>
+<body>
+<div class="calculator">
+    <h1 id="titletext">Депозитный калькулятор</h1>
+    <p id="annotation">Калькулятор депозитов позволяет рассчитать ваши доходы после внесения суммы на счет в банке по определенному тарифу.</p>
+        <table>
+            <tr>
+                <td><div class="calc-body-left">
+                    <p><input class="input" id="datepicker" type="date" placeholder="Дата открытия" name="deposite-date"/></p>
+                    <p><input class="input" type="text" placeholder="Сумма вклада" name="sum"/></p>
+                    <p><input id="check" type="checkbox" checked/>Ежемесячное пополнение вклада</p>
+                </div></td>
+                <td><div class="calc-body-right">
+                    <p><input class="input" min="1" max="5" type="text" placeholder="Срок вклада" name="deposite-term"/></p>
+                    <p><input class="input" type="text" placeholder="Процентная ставка, % годовых" name="percent"/></p>
+                    <p><input class="input" type="text" placeholder="Сумма ежемесячного пополнения вклада" name="addsum"/></p>
+                </div>
+                </td>
+            </tr>
+        </table> 
+            <p><input id="calc-button" type="submit" value="Рассчитать"/></p>
+            <div id="result"></div>
+         </div>    
+    </body>
+</html>
